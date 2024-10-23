@@ -8,67 +8,98 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-    </nav>
         <div class="logo">Kristian Ravn</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">about</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <nav id="hamburger-nav">
-        </nav>
-            <div class="logo">Kristian Ravn</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about">about </a></li>
-                    <li><a href="#experiance">experiance</a></li>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Menu for Mobile -->
+    <nav id="hamburger-nav">
+        <div class="logo">Kristian Ravn</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#experience">experience</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contact">contact</a></li>
-                </div>
-            </div>   
-        </nav>
-        <section id="profile">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/0C9F2B87-CBF3-411A-AD52-9CB84380A674_4_5005_c.jpeg" alt="Kristian Ravn profile picture" />
+            <img src="./assets/profile-pic-03.JPG" alt="Kristian Ravn profile picture" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Kristian Ravn</h1>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2"onclick="window.open(' ./assets/kristian-ravn-cv.pdf')"
-           > Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-        </button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/kristian-ravn-cv.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img
-                src="./assets/linkedin.png"
-                alt="My Linkedin Profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/feed/'" 
-                />
-                <img
-                src="./assets/github.png"
-                alt="My Github Profile"
-                class="icon"
-                onclick="location.href='https://github.com/kristianravn?tab=repositories'"
-                />
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/feed/'" />
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/kristianravn?tab=repositories'" />
             </div>
         </div>
     </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+     <img src="./assets/about-me-pic.JPG"
+            alt="profile picture"
+            class="about-me"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img 
+                    src="./assets/experience.png"
+                    alt="experience icon"
+                    class="icon"
+                    />
+                    <h3>experience</h3>
+                    <p>12 wk codenation course <br />Frontend Development</p>
+                </div>
+                <div class="details-container">
+                    <img
+                    src="./assets/education.png"
+                    alt="education icon"
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>BA Graphic Design</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I am a highly motivated and dedicated individual, currently pursuing a career in frontend development. With a passion for learning and a strong work ethic, I am continuously developing my skills in HTML, CSS, and JavaScript. I am eager to contribute my abilities while gaining further experience in the tech industry. Reliable, adaptable, and not afraid to ask questions, I thrive in both independent and team-oriented environments. I am seeking a position that will allow me to grow as a developer while offering my dedication, flexibility, and problem-solving skills to any team I work with.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='./#experience'"
+    />
+    </section>
         <script src="script.js"></script>
     </body>
-</html>
+</html> 
