@@ -10,7 +10,7 @@
 <body>
     <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-        <div class="logo">Kristian Ravn</div>
+        <div class="logo"></div>
         <ul class="nav-links">
             <li><a href="#about">about</a></li>
             <li><a href="#experience">experience</a></li>
@@ -50,7 +50,7 @@
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/kristian-ravn-cv.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/feed/'" />
@@ -58,48 +58,39 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-     <img src="./assets/about-me-pic.JPG"
-            alt="profile picture"
-            class="about-me"
-            />
-        </div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img 
-                    src="./assets/experience.png"
-                    alt="experience icon"
-                    class="icon"
-                    />
-                    <h3>experience</h3>
-                    <p>12 wk codenation course <br />Frontend Development</p>
+                <img src="./assets/about-me-pic.JPG" alt="About Me" class="about-me" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>12 wk Codenation course <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>BA Graphic Design</p>
+                    </div>
                 </div>
-                <div class="details-container">
-                    <img
-                    src="./assets/education.png"
-                    alt="education icon"
-                    class="icon"
-                    />
-                    <h3>Education</h3>
-                    <p>BA Graphic Design</p>
+                <div class="text-container">
+                    <p>
+                        I am a highly motivated and dedicated individual, currently pursuing a career in frontend development. With a passion for learning and a strong work ethic, I am continuously developing my skills in HTML, CSS, and JavaScript. I am eager to contribute my abilities while gaining further experience in the tech industry. Reliable, adaptable, and not afraid to ask questions, I thrive in both independent and team-oriented environments. I am seeking a position that will allow me to grow as a developer while offering my dedication, flexibility, and problem-solving skills to any team I work with.
+                    </p>
                 </div>
             </div>
-            <div class="text-container">
-                <p>
-                    I am a highly motivated and dedicated individual, currently pursuing a career in frontend development. With a passion for learning and a strong work ethic, I am continuously developing my skills in HTML, CSS, and JavaScript. I am eager to contribute my abilities while gaining further experience in the tech industry. Reliable, adaptable, and not afraid to ask questions, I thrive in both independent and team-oriented environments. I am seeking a position that will allow me to grow as a developer while offering my dedication, flexibility, and problem-solving skills to any team I work with.
-                </p>
-            </div>
         </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='./#experience'"
-    />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
     </section>
+
+    <!-- Experience Section -->
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -109,44 +100,28 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>HTML</h3>
                                 <p>intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>CSS</h3>
                                 <p>intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>Javascript</h3>
                                 <p>intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>React</h3>
                                 <p>intermediate</p>
@@ -155,157 +130,113 @@
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <h2 class="experience-sub-title">Additional Skills</h2>
                     <div class="article-container">
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
-                                <h3>Mysql</h3>
+                                <h3>MySQL</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>Node JS</h3>
-                                <p>basic</p>
+                                <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img
-                             src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon" 
-                            />
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
                             <div>
                                 <h3>Express JS</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
+                    </div>
                 </div>
             </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon"
-         class="icon arrow"
-        onclick="location.href='./#experience'"
-        />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
-    <section>
+
+    <!-- Projects Section -->
+    <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/krispresentation images/project1.jpg" 
-                alt="project 1"
-                class="project1.img"
-                />
-                </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                     onclick="location.href='https://github.com/kristianravn/drumkit-challenge'"
-                    >
-                        
-                    Github
-                    </button>
-                    <button>
-                        <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='http://127.0.0.1:5501/index.html'"
-                       >
-                           
-                       Live Demo
-                       </button>
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/krispresentation images/project2.jpg" 
-                    alt="project 2"
-                    class="project1.img"
-                    />
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/krispresentation images/project1.jpg" alt="project 1" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                         onclick="location.href='https://github.com/kristianravn/to-do-list'"
-                        >
-                            
-                        Github
-                        </button>
-                        <button>
-                            <button class="btn btn-color-2 project-btn"
-                            onclick="location.href=''"
-                           >
-                               
-                           Live Demo
-                           </button>
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kristianravn/drumkit-challenge'">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/krispresentation images/project3.jpg" 
-                        alt="project 3"
-                        class="project1.img"
-                        />
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Three</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn"
-                             onclick="location.href='https://github.com/kristianravn/keycodechallenge'"
-                            >
-                                
-                            Github
-                            </button>
-                            <button>
-                                <button class="btn btn-color-2 project-btn"
-                                onclick="location.href='http://127.0.0.1:5500/index.html'"
-                               >
-                                   
-                               Live Demo
-                               </button>
-                            </button>
-                        </div>
+                        <img src="./assets/krispresentation images/project7.jpg" alt="project 2" class="project-img" />
                     </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/krispresentation images/project4.jpg" 
-                            alt="project 4"
-                            class="project1.img"
-                            />
-                            </div>
-                            <h2 class="experience-sub-title project-title">Project Four</h2>
-                            <div class="btn-container">
-                                <button class="btn btn-color-2 project-btn"
-                                 onclick="location.href='https://github.com/kristianravn/cyberpet.git'"
-                                >
-                                    
-                                Github
-                                </button>
-                                <button>
-                                    <button class="btn btn-color-2 project-btn"
-                                    onclick="location.href='http://127.0.0.1:5502/index.html'"
-                                   >
-                                       
-                                   Live Demo
-                                   </button>
-                                </button>
-                            </div>
-                        </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kristianravn/instaclone-fe'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/krispresentation images/project4.jpg" alt="project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kristianravn/drumkit-challenge'">Github</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
     </section>
-        <script src="script.js"></script>
-    </body>
-</html> 
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:ravn1982@gmail.com">ravn1982@gmail.com</a></p>
+        </div>
+      <div class="contact-info-container">
+        <img 
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/kris-ravn-1613a06b/">LinkedIn</a></p>
+    </div>
+  </div>
+    </section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169 2024 Kristian Ravn. All Rights Reserved</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
+     
+ 

@@ -5,7 +5,13 @@ padding: 0;
 
 body {
     font-family:'Franklin Gothic Medium', sans-serif;
+    background-image: url('./assets/background\ pic.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
 }
+
 html {
     scroll-behavior: smooth;
 
@@ -24,7 +30,9 @@ a, .btn {
 /* desktop nav */
 
  nav, .nav-links {
-    display:flex
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem; /* Adjusts spacing on left and right */
  }
 
  nav {
@@ -349,4 +357,93 @@ article .icon {
 
 /* projects section */
 
+#projects {
+   position: relative;
+}
+
+.color-container {
+   border-color: rgb(163,163,163);
+   background:rgb(250,250,250);
+}
+
+.project-img {
+   border-radius: 2rem;
+   width: 90%;
+   height: 90%;
+}
+
+.project-title {
+   margin: 1rem;
+   color: black;
+}
+
+.project-btn {
+   color: black;
+   border-color: rgb(163,163,163);
+}
+
+/* contact */
+
+#contact {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   height: 70vh;
+}
+
+.contact-info-upper-container {
+   display: flex;
+   justify-content: center;
+   border: 1px solid rgb(53, 53, 53); /* Added border style and width */
+   border-radius: 2rem;
+   background: rgb(250, 250, 250);
+   margin: 1rem auto;
+   padding: 0.5rem;
+}
+
+.contact-info-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.2rem;
+   margin: 2rem;
+}
+
+.contact-icon {
+   cursor: default;
+}
+
+.email-icon {
+   height: 2.5rem;
+}
+
+/* footer section*/
+
+footer {
+   height: 26vh;
+   margin: 0 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav-links-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-links {
+   display: flex;
+   gap: 1rem;
+   list-style: none; /* Removes bullet points */
+   padding: 0; /* Removes default padding */
+   margin: 0; /* Removes default margin */
+}
+
+footer p {
+   text-align: center;
+   margin-top: 1rem; /* Adds spacing between nav and footer text */
+}
 
